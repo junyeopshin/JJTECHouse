@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "GmarketSans-L";
+  src: url("../fonts/GmarketSansLight.ttf") format("ttf");
+}
+@font-face {
+  font-family: "GmarketSans-M";
+  src: url("../fonts/GmarketSansMedium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "NeueHaas-L";
+  src: url("../fonts/NeueHaasDisplayLight.ttf") format("ttf");
+}
+@font-face {
+  font-family: "NeueHaas-R-Italic";
+  src: url("../fonts/NeueHaasDisplayRomanItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Cormorant-Garamond-B-Italic";
+  src: url("../fonts/CormorantGaramond-BoldItalic.ttf") format("ttf");
+}
+@font-face {
+  font-family: "SoakUpTheSunScript-R";
+  src: url("../fonts/SoakUpTheSunScript.otf") format("otf");
+}
+@font-face {
+  font-family: "Splash-R";
+  src: url("../fonts/Splash-Regular.ttf") format("ttf");
+}
