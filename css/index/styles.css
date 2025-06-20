@@ -1,39 +1,47 @@
-.main {
+.wrap {
   display: flex;
   flex-direction: column;
-  width: 1920px;
+  width: 100vw;
   align-items: center;
   position: relative;
 }
 
-.main .section-main {
+.section-main {
   background-color: #ffffff;
   position: relative;
-  width: 1920px;
-  height: 1080px;
+  width: 100%;
+  height: 100vh;
 }
 
-.main .overlap-group {
+.inner {
   position: relative;
-  height: 1080px;
-  background-image: url(../../assets/images/bgc.png);
-  background-size: cover;
-  background-position: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 50px 100px;
+  gap: 100px;
+  background-color: #f8f8f4;
 }
 
-.main .logo {
-  display: inline-flex;
-  align-items: flex-start;
+.section-main img {
   position: absolute;
-  top: 220px;
-  left: 100px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.main .JJ-techouse {
+.section-main .logo {
+  position: relative;
+}
+
+.section-main .JJ-techouse {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Splash-Regular", Helvetica;
+  font-family: "Splash", sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 100px;
@@ -41,17 +49,16 @@
   line-height: 125px;
 }
 
-.main .header {
+.section-main .header {
   display: flex;
-  width: 1720px;
-  align-items: flex-start;
+  width: 100%;
   justify-content: space-between;
-  position: absolute;
-  top: 100px;
-  left: 100px;
+  position: relative;
+}
+.header a {
 }
 
-.main .div {
+.section-main ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +66,7 @@
   flex: 0 0 auto;
 }
 
-.main .text-wrapper {
+.section-main a {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -72,7 +79,7 @@
   white-space: nowrap;
 }
 
-.main .item {
+.section-main ul li {
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -82,7 +89,7 @@
   align-self: stretch;
 }
 
-.main .text-wrapper-2 {
+.section-main ul li a:first-child {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -95,8 +102,8 @@
   line-height: 20px;
   white-space: nowrap;
 }
-
-.main .div-wrapper {
+/* 헤더 메뉴 선 */
+/* .section-main .div-wrapper {
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -107,9 +114,8 @@
   border-left-width: 1px;
   border-left-style: solid;
   border-color: #ffffff;
-}
-
-.main .text-wrapper-3 {
+} */
+.section-main ul li a {
   position: relative;
   width: fit-content;
   margin-top: -1px;
@@ -123,7 +129,7 @@
   white-space: nowrap;
 }
 
-.main .streamline-logos {
+.kakao {
   position: absolute;
   width: 50px;
   height: 50px;
