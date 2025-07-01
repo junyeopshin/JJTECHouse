@@ -1,886 +1,286 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
+
 .wrap {
+  position: relative;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  width: 100vw;
   align-items: center;
   position: relative;
+  background-color: #000;
 }
-
-.section-main {
-  background-color: #ffffff;
+.main {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-
 .inner {
   position: relative;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 50px 100px;
-  gap: 100px;
-  background-color: #f8f8f4;
+  padding: 100px;
 }
-
-.section-main img {
+.bg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 25px;
+  right: -200px;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
-
-.section-main .logo {
-  position: relative;
-}
-
-.section-main .JJ-techouse {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Splash", sans-serif;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 100px;
-  letter-spacing: 15px;
-  line-height: 125px;
-}
-
-.section-main .header {
-  display: flex;
+.bg img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: calc(100% - 200px);
+  height: 20px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
+  z-index: 1000;
+}
+.header .logo {
   position: relative;
 }
-.header a {
-}
-
-.section-main ul {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.section-main a {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #ffffff;
+.header .logo a {
+  color: #fff;
   font-size: 20px;
-  letter-spacing: 0;
+  font-family: "GmarketSans-L", sans-serif;
   line-height: 20px;
-  white-space: nowrap;
 }
-
-.section-main ul li {
+.gnb {
+  position: relative;
+}
+.gnb ul {
+  position: relative;
   display: flex;
-  flex-direction: column;
+}
+.gnb ul li {
+  position: relative;
   width: 200px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  align-self: stretch;
-}
-
-.section-main ul li a:first-child {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #ffffff;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20px;
-  white-space: nowrap;
-}
-/* 헤더 메뉴 선 */
-/* .section-main .div-wrapper {
   display: flex;
-  flex-direction: column;
-  width: 200px;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  align-self: stretch;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-color: #ffffff;
-} */
-.section-main ul li a {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #ffffff;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20px;
-  white-space: nowrap;
+  align-items: center;
 }
-
-.kakao {
+.gnb ul li a {
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+}
+.gnb a.kakao {
   position: absolute;
   width: 50px;
   height: 50px;
   top: -50px;
-  left: 600px;
+  right: -50px;
+  color: white;
 }
-
-.main .div-2 {
+.co {
+  position: relative;
+  margin-top: 120px;
+}
+.co p {
+  font-size: 100px;
+  line-height: 125px;
+  color: #fff;
+  font-family: "Splash", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 15px;
+}
+.company {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   background-color: #f8f8f4;
+}
+.company .info {
   position: relative;
-  width: 1920px;
-  height: 1080px;
-}
-
-.main .desc {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 28px;
-  position: absolute;
-  top: 556px;
-  left: 1122px;
-}
-
-.main .EPS {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.main .p {
-  position: relative;
-  width: fit-content;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.main .title {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  top: 390px;
-  left: 1122px;
-}
-
-.main .text-wrapper-4 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 36px;
-  letter-spacing: 0;
-  line-height: 36px;
-  white-space: nowrap;
-}
-
-.main .text-wrapper-5 {
-  position: relative;
-  width: fit-content;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 80px;
-  letter-spacing: 0;
-  line-height: 80px;
-  white-space: nowrap;
-}
-
-.main .text-wrapper-6 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 20px;
-  letter-spacing: 0;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-.main .text-wrapper-7 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-.main .item-2 {
   display: flex;
-  flex-direction: column;
-  width: 200px;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  align-self: stretch;
-  border-left-width: 1px;
-  border-left-style: solid;
-  border-color: #000000;
+  justify-content: space-between;
+  margin-top: 200px;
 }
-
-.main .text-wrapper-8 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-.main .group {
-  position: absolute;
-  width: 46px;
-  height: 44px;
-  top: 4px;
-  left: 2px;
-}
-
-.main .image {
-  position: absolute;
+.info img {
   width: 900px;
   height: 600px;
-  top: 340px;
-  left: 100px;
+  object-fit: cover;
 }
-
-.main .section-process {
+.info .text {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 100px;
-  background-color: #f8f8f4;
-  position: relative;
-  width: 1920px;
-  height: 1080px;
+  gap: 50px;
 }
-
-.main .inner {
+.info .text .title {
+  position: relative;
+}
+.info .text .title span {
+  font-size: 36px;
+  line-height: 36px;
+}
+.info .text .title p {
+  font-family: "GmarketSans-M", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+}
+.info .text .desc {
+  position: relative;
   display: flex;
-  align-items: flex-start;
-  padding: 120px 0px 0px;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  width: 100%;
-  flex-grow: 1;
+  flex-direction: column;
+  gap: 20px;
 }
-
-.main .process {
+.info .text .desc span {
+  font-size: 20px;
+}
+.process {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f4;
+}
+.process .inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.process-detail {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  position: relative;
-  flex: 1;
-  align-self: stretch;
-  flex-grow: 1;
 }
-
-.main .title-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.main .text-wrapper-9 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
+.process-detail span {
   font-size: 64px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
 }
-
-.main .item-box {
+.process-detail ul {
   display: flex;
   flex-wrap: wrap;
   width: 410px;
   align-items: center;
   gap: 10px 10px;
   position: relative;
-  flex: 0 0 auto;
 }
-
-.main .item-3 {
+.process-detail ul li {
   position: relative;
-  width: 200px;
-  height: 200px;
-  background-color: #ffffff;
-  border-radius: 150px;
-  border: 1px solid;
-  border-color: #d9d9d9;
-}
-
-.main .img {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  top: 46px;
-  left: 63px;
-}
-
-.main .text-wrapper-10 {
-  position: absolute;
-  top: 130px;
-  left: 56px;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.main .item-4 {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  background-color: #ffffff;
-  border-radius: 150px;
-  border: 1px solid;
-  border-color: #aaaaaa;
-}
-
-.main .overlap-group-2 {
-  position: relative;
-  width: 71px;
-  height: 65px;
-  top: 5px;
-  left: 2px;
-}
-
-.main .vector {
-  position: absolute;
-  width: 12px;
-  height: 19px;
-  top: 45px;
-  left: 29px;
-}
-
-.main .group-2 {
-  position: absolute;
-  width: 71px;
-  height: 65px;
-  top: 0;
-  left: 0;
-}
-
-.main .text-wrapper-11 {
-  position: absolute;
-  top: 130px;
-  left: 26px;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.main .group-3 {
-  position: absolute;
-  width: 66px;
-  height: 67px;
-  top: 2px;
-  left: 4px;
-}
-
-.main .text-wrapper-12 {
-  position: absolute;
-  top: 130px;
-  left: 63px;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.main .text-wrapper-13 {
-  position: absolute;
-  top: 130px;
-  left: 83px;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.main .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
-}
-
-.main .text-wrapper-14 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.main .text-wrapper-15 {
-  position: relative;
-  width: fit-content;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.main .div-3 {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.main .item-5 {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 150px;
-  border: 1px solid;
-  border-color: #aaaaaa;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-}
-
-.main .text-wrapper-16 {
-  position: absolute;
-  top: 130px;
-  left: 56px;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #000000;
-  font-size: 18px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.main .item-6 {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border-radius: 150px;
-  border: 1px solid;
-  border-color: #d9d9d9;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      rgba(255, 255, 255, 0.2) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 100%
-    );
-}
-
-.main .our-works {
-  position: absolute;
-  top: 239px;
-  left: 691px;
-  font-family: "Soak Up The Sun Script-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 500px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 300px;
-}
-
-.main .section-works-scroll {
-  position: relative;
-  width: 1920px;
-  height: 1080px;
-  background-color: #000000;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: #ffffff;
-  overflow-y: scroll;
-}
-
-.main .section-works-scroll::-webkit-scrollbar {
-  width: 0;
-  display: none;
-}
-
-.main .overlap {
-  position: relative;
-  width: 1400px;
-  height: 2501px;
-  top: 239px;
-  left: 260px;
-}
-
-.main .works-box {
-  position: absolute;
-  width: 1400px;
-  height: 2200px;
-  top: 301px;
-  left: 0;
-}
-
-.main .item-7 {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  align-items: flex-start;
-  gap: 15px;
-  position: absolute;
-  top: 1600px;
-  left: 0;
-}
-
-.main .text-wrapper-17 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-weight: 500;
-  color: #ffffff;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: 30px;
-  white-space: nowrap;
-}
-
-.main .arrow {
-  position: relative;
-  width: 15px;
-  height: 1px;
-}
-
-.main .img-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  align-self: stretch;
-  width: 100%;
-  flex: 0 0 auto;
+  border-radius: 100px;
+  border: 1px solid #d9d9d9;
+  width: 200px;
+  height: 200px;
+  gap: 10px;
 }
-
-.main .img-2 {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  background-color: #d9d9d9;
-}
-
-.main .text-2 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.main .text-wrapper-18 {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-.main .text-wrapper-19 {
-  position: relative;
-  width: fit-content;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-.main .item-8 {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  align-items: flex-start;
-  gap: 15px;
-  position: absolute;
-  top: 1200px;
-  left: 900px;
-}
-
-.main .item-9 {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  align-items: flex-start;
-  gap: 15px;
-  position: absolute;
-  top: 800px;
-  left: 0;
-}
-
-.main .item-10 {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  align-items: flex-start;
-  gap: 15px;
-  position: absolute;
-  top: 400px;
-  left: 900px;
-}
-
-.main .item-11 {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  align-items: flex-start;
-  gap: 15px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.main .image-2 {
-  position: relative;
-  width: 500px;
-  height: 500px;
-}
-
-.main .our-works-2 {
-  position: absolute;
-  width: 538px;
-  top: 0;
-  left: 431px;
-  font-family: "Soak Up The Sun Script-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 500px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: 300px;
-}
-
-.main .frame {
-  display: flex;
-  width: 1720px;
-  align-items: flex-start;
-  justify-content: space-between;
-  position: absolute;
-  top: 828px;
-  left: 100px;
-}
-
-.main .text-3 {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  position: relative;
-  flex: 0 0 auto;
-}
-
-.main .text-wrapper-20 {
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "Neue Haas Grotesk Display Pro-45Light", Helvetica;
-  font-weight: 300;
-  color: #666666;
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  line-height: 20px;
-}
-
-.main .text-wrapper-21 {
-  position: relative;
-  align-self: stretch;
-  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+.process-detail ul li p {
+  font-family: "GmarketSans-M", sans-serif;
   font-weight: 500;
-  color: #666666;
-  font-size: 16px;
-  letter-spacing: 1.6px;
-  line-height: 20px;
+  font-size: 18px;
+  text-align: center;
 }
-
-.main .text-wrapper-22 {
+.process-detail .text {
   position: relative;
-  align-self: stretch;
-  font-family: "Neue Haas Grotesk Display Pro-45Light", Helvetica;
-  font-weight: 300;
-  color: #666666;
-  font-size: 16px;
-  letter-spacing: 0.8px;
-  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
-
-.main .copyright-JJ {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Cormorant Garamond-Bold", Helvetica;
-  font-weight: 400;
-  color: #666666;
-  font-size: 16px;
-  text-align: right;
-  letter-spacing: 0.8px;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-.main .span {
-  font-family: "Cormorant Garamond-BoldItalic", Helvetica;
-  font-weight: 700;
-  font-style: italic;
-  letter-spacing: 0.13px;
-}
-
-.main .text-wrapper-23 {
-  font-family: "Neue Haas Grotesk Display Pro-56Roman Italic", Helvetica;
-  font-style: italic;
-  letter-spacing: 0.13px;
-}
-
-.main .text-wrapper-24 {
-  position: absolute;
-  top: 99px;
-  left: 854px;
-  font-family: "Neue Haas Grotesk Display Pro-56Roman Italic", Helvetica;
-  font-weight: 400;
-  font-style: italic;
-  color: #000000;
+.process-detail .text p {
   font-size: 24px;
   text-align: center;
-  letter-spacing: 2.4px;
-  line-height: normal;
 }
-
-.main .contact-text {
-  display: inline-flex;
+.works {
+  position: relative;
+  width: 100%;
+  height: 300vh;
+  background-color: #f8f8f4;
+}
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f8f4;
+}
+.footer .inner {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  top: 229px;
-  left: 100px;
+  align-items: center;
+  justify-content: center;
 }
-
-.main .text-wrapper-25 {
+.footer-text {
   position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 108px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
-
-.main .text-wrapper-26 {
+.footer-text p {
+  font-family: "NeueHaas-R-Italic", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+.footer-text .contact-us {
   position: relative;
-  width: fit-content;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-weight: 300;
-  color: #000000;
-  font-size: 108px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.main .arrow-2 {
+.footer-text .contact-us a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.footer-text .contact-us a span {
+  font-size: 96px;
+}
+.footer-text .contact-us a img {
   position: absolute;
-  width: 81px;
-  height: 15px;
-  top: 62px;
-  left: 715px;
+  top: 68px;
+  left: 600px;
+}
+.footer-info {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-info .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.footer-info .text p {
+  font-size: 16px;
+}
+.footer-info .text span {
+  font-size: 16px;
+  font-family: "gmarketSans-M", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+.footer-info span {
+  font-size: 16px;
+  font-family: "gmarketSans-M", sans-serif;
+  font-weight: 500;
 }

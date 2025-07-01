@@ -3,10 +3,14 @@
 @font-face {
   font-family: "GmarketSans-L";
   src: url("../fonts/GmarketSansLight.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
   font-family: "GmarketSans-M";
   src: url("../fonts/GmarketSansMedium.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
 }
 @font-face {
   font-family: "NeueHaas-L";
@@ -15,6 +19,8 @@
 @font-face {
   font-family: "NeueHaas-R-Italic";
   src: url("../fonts/NeueHaasDisplayRomanItalic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
 }
 @font-face {
   font-family: "Cormorant-Garamond-B-Italic";
