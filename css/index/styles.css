@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Splash&display=swap");
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+@import url("https://fonts.googleapis.com/css2?family=Gmarket+Sans:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Soak+Up+The+Sun+Script&display=swap");
 
 .wrap {
   position: relative;
@@ -10,6 +14,8 @@
   position: relative;
   background-color: #000;
 }
+
+/* main */
 .main {
   position: relative;
   width: 100%;
@@ -28,7 +34,7 @@
   width: 100%;
   height: 100%;
 }
-.bg img {
+.bg #wrapper img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -94,6 +100,8 @@
   font-style: normal;
   letter-spacing: 15px;
 }
+
+/* company */
 .company {
   position: relative;
   width: 100%;
@@ -107,7 +115,7 @@
   justify-content: space-between;
   margin-top: 200px;
 }
-.info img {
+.info #wrapper img {
   width: 900px;
   height: 600px;
   object-fit: cover;
@@ -140,6 +148,8 @@
 .info .text .desc span {
   font-size: 20px;
 }
+
+/* process */
 .process {
   position: relative;
   width: 100%;
@@ -203,18 +213,16 @@
   font-size: 24px;
   text-align: center;
 }
+
+/* works */
 .works {
   position: relative;
   width: 100%;
   height: 100vh;
   background-color: #f8f8f4;
 }
-.works img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
+/* footer */
 .footer {
   position: relative;
   width: 100%;
@@ -238,7 +246,9 @@
   gap: 100px;
 }
 .footer-text p {
-  font-family: "NeueHaas-R-Italic", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 400;
+  font-style: italic;
   font-size: 24px;
   line-height: 30px;
 }
@@ -261,7 +271,7 @@
 .footer-text .contact-us a span {
   font-size: 96px;
 }
-.footer-text .contact-us a img {
+.footer-text .contact-us a #wrapper img {
   position: absolute;
   top: 68px;
   left: 600px;
@@ -278,15 +288,20 @@
   flex-direction: column;
 }
 .footer-info .text p {
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-weight: 400;
   font-size: 16px;
 }
 .footer-info .text span {
   font-size: 16px;
   font-family: "gmarketSans-M", sans-serif;
   font-weight: 500;
+  font-style: normal;
   line-height: 20px;
 }
 .footer-info span {
   font-size: 16px;
-  font-family: "NeueHaas-R-Italic", sans-serif;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
